@@ -120,6 +120,8 @@ h3 {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
+  /* firefox */
+  scrollbar-width: none;
 }
 .list_item {
   display: grid;
