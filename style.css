@@ -1,0 +1,318 @@
+:root {
+  --bg-color: white;
+  --blue-deep: #007bff;
+  --blue-faint: rgba(0, 123, 255, 0.6);
+  --black-base: #2a3135;
+  --grey-deep: #868c90;
+  --grey-light: #dce0e2;
+  --grey-light-op60: rgba(220, 224, 226, 0.6);
+  --tag-color-food: #f3a683;
+  --tag-color-search: #3c6382;
+  --tag-color-fintech: #786fa6;
+  --tag-color-saas: #b8e994;
+  --tag-color-social-media: #ea8685;
+  --tag-color-events: #38ada9;
+  --tag-color-marketplace: #cf6a87;
+  --tag-color-mobility: #e77f67;
+  --tag-color-e-commerce: #f7d794;
+  --tag-color-ai: #596275;
+  --tag-color-cybersecurity: #778beb;
+  --tag-color-healthcare: #f8a5c2;
+  --tag-color-education: #63cdda;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: inherit;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(42, 49, 53, 0.1);
+  border: 1px solid rgba(42, 49, 53, 0.05);
+  border-radius: 2px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Inter;
+}
+body {
+  background: var(--bg-color);
+}
+header {
+  width: 100%;
+}
+h1 {
+  color: var(--blue-deep);
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 72px;
+  padding: 48px 0px 8px;
+}
+h2 {
+  color: var(--blue-faint);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  padding: 0px;
+}
+h3 {
+  color: var(--black-base);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "tnum" on, "lnum" on, "case" on, "cpsp" on, "salt" on;
+  padding: 0px;
+  margin-right: 24px;
+}
+
+.header_main {
+  height: 80px;
+  width: clamp(998px, 100vw, 100vw);
+  background: var(--blue-deep);
+  color: white;
+}
+.header_inner {
+  margin: 0px;
+  height: 296px;
+}
+.header_logo {
+  position: absolute;
+  top: -52px;
+  width: 144px;
+  height: 24px;
+}
+
+.header_scrolling {
+  width: 998px;
+  height: 24px;
+  margin: 48px 0px;
+  display: grid;
+  grid-template-columns: 410px 200px 200px 184px;
+  align-content: center;
+}
+.header_scrolling div {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.header_scrolling img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.header_scrolling span {
+  color: var(--black-base);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container_main {
+  position: relative;
+  width: 998px;
+  margin: 0px clamp(0px, calc((100vw - 1040px) / 2), 100%);
+}
+.container_scrolling {
+  width: 998px;
+  height: calc(100vh - 80px - 296px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.list_item {
+  display: grid;
+  grid-template-columns: 410px 200px 200px 184px;
+  align-content: center;
+  padding: 0px;
+  width: 994px;
+  height: 56px;
+  margin-bottom: 24px;
+}
+.company_logo {
+  width: 56px;
+  height: 56px;
+}
+
+.flex_horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex_vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.column_01 {
+  grid-column: 1 / 2;
+}
+.column_02 {
+  grid-column: 2 / 3;
+}
+.column_03 {
+  grid-column: 3 / 4;
+}
+.column_04 {
+  grid-column: 4 / 5;
+}
+
+.tag_item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  margin-right: 8px;
+}
+.tag_item::before {
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgba(42, 49, 53, 0.06);
+  box-shadow: 0px 1px 4px rgba(243, 166, 131, 0.25);
+}
+.tag_foodtech::before {
+  content: "Foodtech";
+  background-color: var(--tag-color-food);
+}
+.tag_fintech::before {
+  content: "Fintech";
+  background-color: var(--tag-color-fintech);
+}
+.tag_cybersecurity::before {
+  content: "Cybersecurity";
+  background-color: var(--tag-color-cybersecurity);
+}
+.tag_e_commerce::before {
+  content: "E-Commerce";
+  background-color: var(--tag-color-e-commerce);
+}
+.tag_mobility::before {
+  content: "Mobility";
+  background-color: var(--tag-color-mobility);
+}
+.tag_healthcare::before {
+  content: "Healthcare";
+  background-color: var(--tag-color-healthcare);
+}
+.tag_ai::before {
+  content: "AI";
+  background-color: var(--tag-color-ai);
+}
+.tag_marketplace::before {
+  content: "Marketplace";
+  background-color: var(--tag-color-marketplace);
+}
+.tag_education::before {
+  content: "Education";
+  background-color: var(--tag-color-education);
+}
+.tag_social_media::before {
+  content: "Social Media";
+  background-color: var(--tag-color-social-media);
+}
+.tag_saas::before {
+  content: "SaaS";
+  background-color: var(--tag-color-saas);
+}
+.tag_search::before {
+  content: "Search";
+  background-color: var(--tag-color-search);
+}
+.tag_events::before {
+  content: "Events";
+  background-color: var(--tag-color-events);
+}
+
+.text_pricing {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-feature-settings: "tnum" on, "lnum" on, "case" on, "cpsp" on, "salt" on;
+  color: var(--black-base);
+}
+.text_pricing::before {
+  content: "$";
+  color: var(--grey-deep);
+}
+.text_grey_light {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--grey-light);
+}
+.link_grey {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--grey-deep);
+  display: flex;
+  align-items: center;
+  font-feature-settings: "tnum" on, "lnum" on, "case" on, "cpsp" on, "salt" on;
+  text-decoration: none;
+}
+
+.icon_16 {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.icon_20 {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+.icon_flag {
+  width: 30px;
+  height: 20px;
+  filter: drop-shadow(0px 1px 4px rgba(51, 51, 51, 0.1));
+  margin-right: 12px;
+}
+.line_02 {
+  margin-top: 4px;
+}
+.line_02_v {
+  margin-left: 24px;
+}
+
+.filter_blue {
+  filter: invert(28%) sepia(88%) saturate(3932%) hue-rotate(204deg)
+    brightness(111%) contrast(101%);
+}
+.filter_grey_light {
+  filter: invert(99%) sepia(1%) saturate(1305%) hue-rotate(170deg)
+    brightness(91%) contrast(94%);
+}
+
+.rate_01 :nth-child(1) {
+  filter: invert(28%) sepia(88%) saturate(3932%) hue-rotate(204deg)
+    brightness(111%) contrast(101%);
+}
+.rate_02 :nth-child(-n + 2) {
+  filter: invert(28%) sepia(88%) saturate(3932%) hue-rotate(204deg)
+    brightness(111%) contrast(101%);
+}
+.rate_03 :nth-child(-n + 3) {
+  filter: invert(28%) sepia(88%) saturate(3932%) hue-rotate(204deg)
+    brightness(111%) contrast(101%);
+}
+.rate_04 :nth-child(-n + 4) {
+  filter: invert(28%) sepia(88%) saturate(3932%) hue-rotate(204deg)
+    brightness(111%) contrast(101%);
+}
+.rate_05 :nth-child(-n + 5) {
+  filter: invert(28%) sepia(88%) saturate(3932%) hue-rotate(204deg)
+    brightness(111%) contrast(101%);
+}
