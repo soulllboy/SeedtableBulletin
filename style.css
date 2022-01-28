@@ -72,6 +72,59 @@ h3 {
   margin-right: 24px;
 }
 
+footer {
+  margin-top: 76px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  width: 246px;
+  height: 72px;
+}
+
+.nameplate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 260px;
+  height: 32px;
+}
+.nameplate :nth-child(1) {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(42, 49, 53, 0.06);
+  filter: drop-shadow(0px 1px 4px rgba(42, 49, 53, 0.15));
+  border-radius: 16px;
+  margin-right: 16px;
+}
+.nameplate :nth-child(2) {
+  height: 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--black-base);
+  margin-right: 16px;
+}
+.nameplate :nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  height: 24px;
+  background: var(--blue-deep);
+  box-shadow: 0px 1px 4px rgba(42, 49, 53, 0.25);
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .header_main {
   height: 80px;
   width: clamp(998px, 100vw, 100vw);
@@ -123,7 +176,7 @@ h3 {
 }
 .container_scrolling {
   width: 998px;
-  height: calc(100vh - 80px - 296px);
+  /* height: calc(100vh - 80px - 296px); */
   display: flex;
   flex-direction: column;
 }
