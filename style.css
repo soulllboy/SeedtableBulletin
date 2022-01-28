@@ -127,10 +127,17 @@ footer {
 
 .header_main {
   height: 80px;
-  width: clamp(998px, 100vw, 100vw);
+  width: clamp(998px, calc(100vw - 4px), 100vw);
   background: var(--blue-deep);
   color: white;
 }
+/* for FF with hidden scrollbar */
+@supports (-moz-appearance: none) {
+  .header_main {
+    width: clamp(998px, 100vw, 100vw);
+  }
+}
+
 .header_inner {
   margin: 0px;
   height: 296px;
