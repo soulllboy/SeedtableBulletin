@@ -35,6 +35,10 @@
 }
 html {
   font-family: Inter;
+
+  overflow-y: scroll;
+  /* firefox */
+  scrollbar-width: none;
 }
 body {
   background: var(--bg-color);
@@ -83,6 +87,7 @@ h3 {
   top: -52px;
   width: 144px;
   height: 24px;
+  cursor: pointer;
 }
 
 .header_scrolling {
@@ -119,9 +124,6 @@ h3 {
   height: calc(100vh - 80px - 296px);
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
-  /* firefox */
-  scrollbar-width: none;
 }
 .list_item {
   display: grid;
@@ -135,6 +137,7 @@ h3 {
 .company_logo {
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 .flex_horizontal {
