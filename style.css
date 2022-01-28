@@ -107,11 +107,13 @@ h3 {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+  cursor: pointer;
 }
 .header_scrolling span {
   color: var(--black-base);
   font-weight: 400;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .container_main {
