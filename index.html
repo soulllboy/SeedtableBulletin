@@ -25,10 +25,30 @@
         <h1>European Startups</h1>
         <h2>to Watch in 2021</h2>
         <header class="header_scrolling">
-          <div class="column_01" onclick="sortName()"><img src="assets/icons/thunderbolt.png" class="filter_blue"><span>Company</span></div>
-          <div class="column_02" onclick="sortLocation()"><img src="assets/icons/environment.png" class="filter_blue"><span>Location</span></div>
-          <div class="column_03" onclick="sortNumber()"><img src="assets/icons/team.png" class="filter_blue"><span>Employees</span></div>
-          <div class="column_04" onclick="sortMoney()"><img src="assets/icons/stock.png" class="filter_blue"><span>Raise</span></div>
+          <div class="column_01" onclick="sortName()">
+            <img src="assets/icons/thunderbolt.png" class="filter_blue">
+            <span>Company</span>
+            <img src="assets/icons/caret-down.png" class="caret_img" style="display: none;" id="name_caret_down">
+            <img src="assets/icons/caret-up.png" class="caret_img" style="display: none;" id="name_caret_up">
+          </div>
+          <div class="column_02" onclick="sortLocation()">
+            <img src="assets/icons/environment.png" class="filter_blue">
+            <span>Location</span>            
+            <img src="assets/icons/caret-down.png" class="caret_img" style="display: none;" id="location_caret_down">
+            <img src="assets/icons/caret-up.png" class="caret_img" style="display: none;" id="location_caret_up">
+          </div>
+          <div class="column_03" onclick="sortNumber()">
+            <img src="assets/icons/team.png" class="filter_blue">
+            <span>Employees</span>
+            <img src="assets/icons/caret-down.png" class="caret_img" style="display: none;" id="employees_caret_down">
+            <img src="assets/icons/caret-up.png" class="caret_img" style="display: none;" id="employees_caret_up">
+          </div>
+          <div class="column_04" onclick="sortMoney()">
+            <img src="assets/icons/stock.png" class="filter_blue">
+            <span>Raise</span>
+            <img src="assets/icons/caret-down.png" class="caret_img" style="display: none;" id="raise_caret_down">
+            <img src="assets/icons/caret-up.png" class="caret_img" style="display: none;" id="raise_caret_up">
+          </div>
         </header>
       </header>
       <div class="container_scrolling">

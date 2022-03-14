@@ -175,6 +175,11 @@ footer {
   font-size: 15px;
   cursor: pointer;
 }
+.caret_img {
+  margin-left: 8px;
+  filter: invert(99%) sepia(1%) saturate(1305%) hue-rotate(170deg)
+    brightness(91%) contrast(94%);
+}
 
 .container_main {
   position: relative;
